@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section id="intro">
+
+    <header>
+        <a href="/">
+            <img src="/logo.png" alt="Logo">
+        </a>
+    </header>
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit <strong>amet consectetur</strong>, adipisicing elit. Reprehenderit nisi animi
+            doloremque
+        </p>
+        <p>
+            libero, aperiam omnis voluptates? Magnam cumque sit natus voluptatum consequuntur maxime quibusdam
+        </p>
+        <p>
+            quia in. Temporibus accusamus distinctio voluptatibus.
+        </p>
+    </main>
+
+    <section id="buttons">
+        <button onclick="onOff()">+ Adicionar Ideia</button>
+        <a href="/ideias" class="button"> Ver Ideias</a>
+    </section>
+
+    <footer>
+        com <a href="#">♥</a> Alan Neres
+    </footer>
+
+</section>
+
+<section id="last-ideias">
+    {% include "all_Ideas.html" %}
+</section>
+
+{% endblock %}
